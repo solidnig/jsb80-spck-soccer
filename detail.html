@@ -22,8 +22,19 @@
     />
     <link rel="stylesheet" href="./css/reset-bootstrap.css" />
     <link rel="icon" href="./images/d-removebg-preview.png" type="image/png" />
-  </head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <style>
+    .swiper {
+      width: 600px;
+      height: 300px;
+    }
+  </style>
   <body>
     <button
       class="dark-mode-toggle"
@@ -55,87 +66,55 @@
       </nav>
     </header>
     <main>
-          <!-- Carousel Section -->
-    <div class="container mb-5">
-      <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <img
-              src="https://via.placeholder.com/800x400"
-              class="d-block w-100"
-              alt="Slide 1"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Tiêu đề Slide 1</h5>
-              <a href="detail.html" class="btn btn-primary">Xem chi tiết</a>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <img
-              src="https://via.placeholder.com/800x400/ff7f7f"
-              class="d-block w-100"
-              alt="Slide 2"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Tiêu đề Slide 2</h5>
-              <a href="#" class="btn btn-primary">Xem chi tiết</a>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <img
-              src="https://via.placeholder.com/800x400/7fbfff"
-              class="d-block w-100"
-              alt="Slide 3"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Tiêu đề Slide 3</h5>
-              <a href="#" class="btn btn-primary">Xem chi tiết</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Controls -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#customCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Trước</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#customCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Sau</span>
-        </button>
-      </div>
-    </div>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2g-4">
           <div class="col">
             <div class="card">
+              <h1 class="card-title">Diogo Jota qua đời</h1>
               <img
                 src="https://sohanews.sohacdn.com/160588918557773824/2025/7/5/skysports-diogo-jota-obit-liverpool6955989-1751707987828-1751707988013239656302.jpg"
                 alt="Tin 1"
               />
               <div class="card-body">
-                <h5 class="card-title">Diogo Jota qua đời</h5>
-                <p class="card-text">Diogo Jota qua đời vì tai nạn xe</p>
-                <a href="detail.html" class="btn btn-primary">Xem chi tiết</a>
+                <p class="card-text">
+                  Ngày 3/7, thế giới bóng đá chìm trong đau buồn vì thông tin
+                  ngôi sao của Liverpool và đội tuyển Bồ Đào Nha, Diogo Jota
+                  thiệt mạng do tai nạn giao thông. Jota cùng em trai, Andre
+                  Silva gặp nạn ở tỉnh Zamora, Tây Ban Nha vào lúc 0h30 thứ Năm
+                  (giờ địa phương). Theo điều tra ban đầu của cơ quan chức năng
+                  địa phương, chiếc xe Lamborghini của Jota và em trai bị nổ lốp
+                  trong lúc vượt một xe khác ở tốc độ rất cao. Sự cố xảy ra quá
+                  nhanh khiến chiếc xe mất lái, lao ra khỏi đường và lật nhiều
+                  vòng trước khi bốc cháy dữ dội. Jota và em trai thiệt mạng tại
+                  chỗ. Các dịch vụ khẩn cấp đã được gọi đến nhưng không thể cứu
+                  hai anh em. Danh tính của họ chỉ được xác nhận thông qua biển
+                  số xe. Đoạn video do truyền thông Tây Ban Nha thu thập cho
+                  thấy chiếc Lamborghini bị lật úp bên lề đường, cháy đen và
+                  biến dạng hoàn toàn.
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
     </main>
     <footer>
@@ -154,6 +133,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/change-dark-light-mode.js"></script>
+    <script src="./js/main.js"></script>
     <script src="./js/auth.js"></script>
   </body>
 </html>
