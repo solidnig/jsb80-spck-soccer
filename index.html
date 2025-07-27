@@ -22,8 +22,24 @@
     />
     <link rel="stylesheet" href="./css/reset-bootstrap.css" />
     <link rel="icon" href="./images/d-removebg-preview.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
+<style>
+  .carousel-item img {
+    width: 100%;
+    height: 700px; /* Chiều cao bạn mong muốn */
+    object-fit: cover; /* Crop ảnh để vừa khung */
+  }
 
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+</style>
   <body>
     <button
       class="dark-mode-toggle"
@@ -55,19 +71,18 @@
       </nav>
     </header>
     <main>
-          <!-- Carousel Section -->
-    <div class="container mb-5">
+      <div class="container">
       <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- Slide 1 -->
           <div class="carousel-item active">
             <img
-              src="https://via.placeholder.com/800x400"
+              src="https://sohanews.sohacdn.com/160588918557773824/2025/7/5/skysports-diogo-jota-obit-liverpool6955989-1751707987828-1751707988013239656302.jpg"
               class="d-block w-100"
               alt="Slide 1"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Tiêu đề Slide 1</h5>
+              <h5 class="text-white">Diogo Jota qua đời</h5>
               <a href="detail.html" class="btn btn-primary">Xem chi tiết</a>
             </div>
           </div>
@@ -75,13 +90,13 @@
           <!-- Slide 2 -->
           <div class="carousel-item">
             <img
-              src="https://via.placeholder.com/800x400/ff7f7f"
+              src="https://cdn2.tuoitre.vn/thumb_w/730/471584752817336320/2025/7/24/2025-07-23t184716z564621641up1el7n1cugrkrtrmadp3soccer-spain-fcb-rahsford-17533161101131127173839.jpg"
               class="d-block w-100"
               alt="Slide 2"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Tiêu đề Slide 2</h5>
-              <a href="#" class="btn btn-primary">Xem chi tiết</a>
+              <h5 class="text-white">Marcus Rashford đến Barcelona</h5>
+              <a href="detail2.html" class="btn btn-primary">Xem chi tiết</a>
             </div>
           </div>
 
@@ -119,34 +134,87 @@
           <span class="visually-hidden">Sau</span>
         </button>
       </div>
-    </div>
+      <div class="row row-cols-1 row-cols-md-2g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://sohanews.sohacdn.com/160588918557773824/2025/7/5/skysports-diogo-jota-obit-liverpool6955989-1751707987828-1751707988013239656302.jpg"
+              alt="Tin 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Diogo Jota qua đời</h5>
+              <p class="card-text">Diogo Jota qua đời vì tai nạn xe</p>
+              <a href="detail.html" class="btn btn-primary">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2g-4">
           <div class="col">
             <div class="card">
               <img
-                src="https://sohanews.sohacdn.com/160588918557773824/2025/7/5/skysports-diogo-jota-obit-liverpool6955989-1751707987828-1751707988013239656302.jpg"
+                src="https://cdn2.tuoitre.vn/thumb_w/730/471584752817336320/2025/7/24/2025-07-23t184716z564621641up1el7n1cugrkrtrmadp3soccer-spain-fcb-rahsford-17533161101131127173839.jpg"
                 alt="Tin 1"
               />
               <div class="card-body">
-                <h5 class="card-title">Diogo Jota qua đời</h5>
-                <p class="card-text">Diogo Jota qua đời vì tai nạn xe</p>
-                <a href="detail.html" class="btn btn-primary">Xem chi tiết</a>
+                <h5 class="card-title">
+                  Rashford: Tôi chọn Barca vì coi đây là nhà
+                </h5>
+                <p class="card-text">
+                  Tiền đạo người Anh Marcus Rashford không giấu nổi sự phấn
+                  khích khi chính thức ra mắt Barcelona vào tối 23-7. Anh nói
+                  cảm thấy như đang ở nhà và giấc mơ đã trở thành hiện thực.
+                </p>
+                <a href="detail2.html" class="btn btn-primary">Xem chi tiết</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <!-- Cột logo -->
+      <div class="col-md-4 mb-3">
+        <h4>Tên Website</h4>
+        <p>Giới thiệu ngắn gọn hoặc slogan của bạn.</p>
+      </div>
+
+      <!-- Cột liên kết -->
+      <div class="col-md-4 mb-3">
+        <h5>Liên kết</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none">Trang chủ</a></li>
+          <li><a href="#" class="text-decoration-none">Giới thiệu</a></li>
+          <li><a href="#" class="text-decoration-none">Dịch vụ</a></li>
+          <li><a href="#" class="text-decoration-none">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột liên hệ -->
+      <div class="col-md-4 mb-3">
+        <h5>Liên hệ</h5>
+        <p>Email: contact@example.com</p>
+        <p>ĐT: 0123 456 789</p>
+        <p>Địa chỉ: 123 Đường ABC, TP.HCM</p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="text-center">
+      &copy; 2025 Tên Website. All rights reserved.
+    </div>
+  </div>
+</footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
@@ -155,5 +223,8 @@
     ></script>
     <script src="./js/change-dark-light-mode.js"></script>
     <script src="./js/auth.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {});
+    </script>
   </body>
 </html>
