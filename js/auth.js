@@ -32,8 +32,16 @@ window.addEventListener("DOMContentLoaded", () => {
   const loggedInUser = localStorage.getItem("loggedInUser");
   if (userNav && loggedInUser) {
     userNav.innerHTML = `
-      <span class="nav-link text-warning">Xin chào, <b>${loggedInUser}</b></span>
-      <a class="nav-link text-danger" href="#" onclick="logout()">Đăng xuất</a>
+      <a class="nav-link dropdown-toggle text-warning" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Xin chào, <b>${loggedInUser}</b>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+        <li><a class="dropdown-item text-danger" href="#" onclick="logout()">Đăng xuất</a></li>
+      </ul>
+    `;
+  } else if (userNav) {
+    userNav.innerHTML = `
+      <a class="nav-link" href="login.html">Đăng nhập</a>
     `;
   }
 });
@@ -41,5 +49,5 @@ window.addEventListener("DOMContentLoaded", () => {
 // Đăng xuất
 function logout() {
   localStorage.removeItem("loggedInUser");
-  location.reload();
+  window.location.href = "login.html";
 }
