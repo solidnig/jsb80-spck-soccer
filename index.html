@@ -28,6 +28,42 @@
     />
   </head>
 <style>
+    .width_common {
+      width: 100%;
+      max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+      margin: 0 auto; /* Căn giữa */
+    }
+    .flexbox {
+      display: flex;
+      align-items: center; /* Căn giữa theo chiều dọc */
+      justify-content: space-between; /* Phân bố không gian */
+      padding: 10px 20px;
+      height: 60px; /* Chiều cao cố định */
+    }
+    .nav-folder {
+      width: 100%;
+    }
+    .ul-nav-folder {
+      list-style: none;
+      display: flex; /* Sắp xếp ngang */
+      align-items: center;
+      gap: 20px; /* Khoảng cách giữa các mục */
+      margin: 0;
+      padding: 0;
+    }
+    .ul-nav-folder li {
+      display: flex;
+      align-items: center;
+    }
+    .ul-nav-folder a {
+      font-weight: 200; /* Chữ mỏng (Light) */
+      font-size: 30px;
+      text-decoration: none;
+      color:black
+    }
+    .ul-nav-folder a:hover {
+      color: #ddd;
+    }
   .carousel-item img {
     width: 100%;
     height: 700px; /* Chiều cao bạn mong muốn */
@@ -38,6 +74,40 @@
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+  }
+.navbar {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      height: 60px; /* Chiều cao cố định */
+    }
+    .navbar-brand {
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+    }
+    .logo {
+      height: 70px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .navbar-nav {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin-left: auto;
+    }
+    .navbar-nav a {
+      font-size: 18px;
+    }
+    @media (max-width: 768px) {
+      .logo {
+        height: 70px;
+      }
+  }
+  .h1{
+    color: #FFD6FF;
   }
 </style>
   <body>
@@ -52,11 +122,14 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Tin tức</a>
+          <a class="navbar-brand" href="#"><img src="/images/d-removebg-preview.png" alt="" class="logo"></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lichthidau.html">Lịch thi đấu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="submit.html">Gửi tin</a>
@@ -71,6 +144,19 @@
       </nav>
     </header>
     <main>
+      <nav class="width_common flexbox nav-folder">
+      <ul class="ul-nav-folder ul-subfolder home-tt" data-campaign="Header">
+        <li>
+          <strong style="padding: 10px 0; display:block; font-size: 30px;">Các giải</strong>
+        </li>
+        <li><a href="v-league.html" >V-League</a></li>
+        <li><a href="epl.html" >Ngoại Hạng Anh</a></li>
+        <li><a href="laliga.html" >La Liga</a></li>
+        <li><a href="bundesliga.html" >Bundesliga</a></li>
+        <li><a href="sra.html" >Serie A</a></li>
+        <li><a href="l1.html" >Ligue 1</a></li>
+      </ul>
+      </nav>
       <div class="container">
       <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -99,19 +185,6 @@
               <a href="detail2.html" class="btn btn-primary">Xem chi tiết</a>
             </div>
           </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <img
-              src="https://via.placeholder.com/800x400/7fbfff"
-              class="d-block w-100"
-              alt="Slide 3"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Tiêu đề Slide 3</h5>
-              <a href="#" class="btn btn-primary">Xem chi tiết</a>
-            </div>
-          </div>
         </div>
 
         <!-- Controls -->
@@ -133,6 +206,9 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Sau</span>
         </button>
+        <h1 style="color: #FFD6FF">.</h1>
+                <h1 style="color: #FFD6FF">.</h1>
+                        <h1 style="color: #FFD6FF">.</h1>
       </div>
       <div class="row row-cols-1 row-cols-md-2g-4">
         <div class="col">
