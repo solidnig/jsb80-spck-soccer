@@ -1,16 +1,16 @@
 /* Reset và tùy chỉnh Bootstrap */
 :root {
-  --bs-primary: #e6067a; /* Primary sáng */
-  --bs-primary-foreground: #ffffff; /* Primary Foreground sáng */
-  --bs-secondary: #ffd6ff; /* Secondary sáng */
-  --bs-secondary-foreground: #91185c; /* Secondary Foreground sáng */
+  --bs-primary: #606060; /* Primary sáng */
+  --bs-primary-foreground: #f0f0f0; /* Primary Foreground sáng */
+  --bs-secondary: #dedede; /* Secondary sáng */
+  --bs-secondary-foreground: #3a3a3a; /* Secondary Foreground sáng */
 }
 
 body.dark {
-  --bs-primary: #ff6bef; /* Primary tối */
-  --bs-primary-foreground: #180518; /* Primary Foreground tối */
-  --bs-secondary: #46204f; /* Secondary tối */
-  --bs-secondary-foreground: #ffb3ff; /* Secondary Foreground tối */
+  --bs-primary: #b0b0b0; /* Primary tối */
+  --bs-primary-foreground: #2b2b2b; /* Primary Foreground tối */
+  --bs-secondary: #5a5a5a; /* Secondary tối */
+  --bs-secondary-foreground: #c0c0c0; /* Secondary Foreground tối */
 }
 
 /* Áp dụng màu Primary cho các thành phần */
