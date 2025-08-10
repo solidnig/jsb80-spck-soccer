@@ -27,7 +27,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-<style>
+  <style>
     .width_common {
       width: 100%;
       max-width: 1200px; /* Giới hạn chiều rộng tối đa */
@@ -59,23 +59,23 @@
       font-weight: 200; /* Chữ mỏng (Light) */
       font-size: 30px;
       text-decoration: none;
-      color:black
+      color: black;
     }
     .ul-nav-folder a:hover {
       color: #ddd;
     }
-  .carousel-item img {
-    width: 100%;
-    height: 700px; /* Chiều cao bạn mong muốn */
-    object-fit: cover; /* Crop ảnh để vừa khung */
-  }
+    .carousel-item img {
+      width: 100%;
+      height: 700px; /* Chiều cao bạn mong muốn */
+      object-fit: cover; /* Crop ảnh để vừa khung */
+    }
 
-  .carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-  }
-.navbar {
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .navbar {
       display: flex;
       align-items: center;
       padding: 10px 20px;
@@ -105,10 +105,10 @@
       .logo {
         height: 70px;
       }
-  }
-.container{
-  padding-bottom: 20px;
-}
+    }
+    .container {
+      padding-bottom: 20px;
+    }
     .swiper {
       width: 100%;
       height: 100%;
@@ -128,7 +128,7 @@
       height: 400px;
       object-fit: cover;
     }
-</style>
+  </style>
   <body>
     <button
       class="dark-mode-toggle"
@@ -141,7 +141,9 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/images/d-removebg-preview.png" alt="" class="logo"></a>
+          <a class="navbar-brand" href="#"
+            ><img src="/images/d-removebg-preview.png" alt="" class="logo"
+          /></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
@@ -164,63 +166,65 @@
     </header>
     <main>
       <nav class="width_common flexbox nav-folder">
-      <ul class="ul-nav-folder ul-subfolder home-tt" data-campaign="Header">
+        <ul class="ul-nav-folder ul-subfolder home-tt" data-campaign="Header">
           <li>
             <a href="index.html" style="font-style: initial">Các giải</a>
             >
           </li>
-        <li><a href="v-league.html" >V-League</a></li>
-        <li><a href="epl.html" >Ngoại Hạng Anh</a></li>
-        <li><a href="laliga.html" >La Liga</a></li>
-        <li><a href="bundesliga.html" >Bundesliga</a></li>
-        <li><a href="sra.html" >Serie A</a></li>
-        <li><a href="l1.html" >Ligue 1</a></li>
-      </ul>
+          <li><a href="v-league.html">V-League</a></li>
+          <li><a href="epl.html">Ngoại Hạng Anh</a></li>
+          <li><a href="laliga.html">La Liga</a></li>
+          <li><a href="bundesliga.html">Bundesliga</a></li>
+          <li><a href="sra.html">Serie A</a></li>
+          <li><a href="l1.html">Ligue 1</a></li>
+        </ul>
       </nav>
       <div class="container">
-          <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTHQELs0JA1V-UYzad-TgXEXtQ0Bcv-Ku-N_ma2mWpnH21rcCoGgrqoYrsMN8grh73dMqPRN949Nd_v3jUmDVe6lx3mkckNpQX3EEx0coD" class="d-block" alt="">
-                      <h5>Diogo Jota qua đời</h5>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTHQELs0JA1V-UYzad-TgXEXtQ0Bcv-Ku-N_ma2mWpnH21rcCoGgrqoYrsMN8grh73dMqPRN949Nd_v3jUmDVe6lx3mkckNpQX3EEx0coD"
+                class="d-block"
+                alt=""
+              />
+              <h5>Diogo Jota qua đời</h5>
               <a href="detail.html" class="btn btn-primary">Xem chi tiết</a>
-      </div>
-      <div class="swiper-slide">
-                    <img
-              src="https://e0.365dm.com/25/07/768x432/skysports-football-premier-league_6956865.jpg?20250704105434"
-              class="d-block"
-              alt="Slide 2"
-            />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://e0.365dm.com/25/07/768x432/skysports-football-premier-league_6956865.jpg?20250704105434"
+                class="d-block"
+                alt="Slide 2"
+              />
               <h5>Marcus Rashford đến Barcelona</h5>
               <a href="detail2.html" class="btn btn-primary">Xem chi tiết</a>
-      </div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-      <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-      <div class="row row-cols-1 row-cols-md-2g-4">
-        <div class="col">
-          <div class="card">
-            <img
-              src="https://sohanews.sohacdn.com/160588918557773824/2025/7/5/skysports-diogo-jota-obit-liverpool6955989-1751707987828-1751707988013239656302.jpg"
-              alt="Tin 1"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Diogo Jota qua đời</h5>
-              <p class="card-text">Diogo Jota qua đời vì tai nạn xe</p>
-              <a href="detail.html" class="btn btn-primary">Xem chi tiết</a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2g-4">
+          <div class="col">
+            <div class="card" style="margin: 20px">
+              <img
+                src="https://sohanews.sohacdn.com/160588918557773824/2025/7/5/skysports-diogo-jota-obit-liverpool6955989-1751707987828-1751707988013239656302.jpg"
+                alt="Tin 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Diogo Jota qua đời</h5>
+                <p class="card-text">Diogo Jota qua đời vì tai nạn xe</p>
+                <a href="detail.html" class="btn btn-primary">Xem chi tiết</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
         <div class="row row-cols-1 row-cols-md-2g-4">
           <div class="col">
-            <div class="card">
+            <div class="card" style="margin: 20px">
               <img
                 src="https://cdn2.tuoitre.vn/thumb_w/730/471584752817336320/2025/7/24/2025-07-23t184716z564621641up1el7n1cugrkrtrmadp3soccer-spain-fcb-rahsford-17533161101131127173839.jpg"
-                alt="Tin 1"
+                alt="Tin 2"
               />
               <div class="card-body">
                 <h5 class="card-title">
@@ -236,43 +240,63 @@
             </div>
           </div>
         </div>
+        <div class="row row-cols-1 row-cols-md-2g-4">
+          <div class="col">
+            <div class="card" style="margin: 20px">
+              <img
+                src="https://phapluatxahoi.kinhtedothi.vn/stores/news_dataimages/2025/082025/09/17/b9f818b4f046c0df80ec559d6a3125fa.jpg?rt=20250809171833"
+                alt="Tin 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Man Utd chính thức công bố "bom tấn" Benjamin Sesko
+                </h5>
+                <p class="card-text">
+                  Manchester United chính thức công bố bản hợp đồng "bom tấn"
+                  Benjamin Sesko từ RB Leipzig.
+                </p>
+                <a href="detail3.html" class="btn btn-primary">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-<footer class="pt-5 pb-3">
-  <div class="container">
-    <div class="row">
-      <!-- Cột logo -->
-      <div class="col-md-4 mb-3">
-        <h4>Tên Website</h4>
-        <p>Giới thiệu ngắn gọn hoặc slogan của bạn.</p>
-      </div>
+    <footer class="pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <!-- Cột logo -->
+          <div class="col-md-4 mb-3">
+            <h4>Tên Website</h4>
+            <p>Giới thiệu ngắn gọn hoặc slogan của bạn.</p>
+          </div>
 
-      <!-- Cột liên kết -->
-      <div class="col-md-4 mb-3">
-        <h5>Liên kết</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-decoration-none">Trang chủ</a></li>
-          <li><a href="#" class="text-decoration-none">Giới thiệu</a></li>
-          <li><a href="#" class="text-decoration-none">Dịch vụ</a></li>
-          <li><a href="#" class="text-decoration-none">Liên hệ</a></li>
-        </ul>
-      </div>
+          <!-- Cột liên kết -->
+          <div class="col-md-4 mb-3">
+            <h5>Liên kết</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none">Trang chủ</a></li>
+              <li><a href="#" class="text-decoration-none">Giới thiệu</a></li>
+              <li><a href="#" class="text-decoration-none">Dịch vụ</a></li>
+              <li><a href="#" class="text-decoration-none">Liên hệ</a></li>
+            </ul>
+          </div>
 
-      <!-- Cột liên hệ --> 
-      <div class="col-md-4 mb-3">
-        <h5>Liên hệ</h5>
-        <p>Email: contact@example.com</p>
-        <p>ĐT: 0123 456 789</p>
-        <p>Địa chỉ: 123 Đường ABC, TP.HCM</p>
-      </div>
-    </div>
+          <!-- Cột liên hệ -->
+          <div class="col-md-4 mb-3">
+            <h5>Liên hệ</h5>
+            <p>Email: contact@example.com</p>
+            <p>ĐT: 0123 456 789</p>
+            <p>Địa chỉ: 123 Đường ABC, TP.HCM</p>
+          </div>
+        </div>
 
-    <hr>
-    <div class="text-center">
-      &copy; 2025 Tên Website. All rights reserved.
-    </div>
-  </div>
-</footer>
+        <hr />
+        <div class="text-center">
+          &copy; 2025 Tên Website. All rights reserved.
+        </div>
+      </div>
+    </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -288,16 +312,16 @@
     ></script>
     <script src="./js/change-dark-light-mode.js"></script>
     <script src="./js/auth.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
