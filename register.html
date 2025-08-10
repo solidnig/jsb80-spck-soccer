@@ -27,67 +27,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <style>
-    /* Mặc định (sáng) */
-    body {
-      background-color: #f1f0e5;
-      color: #212121;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    /* Chế độ tối */
-    body.dark {
-      background-color: #2d2521;
-      color: #f1f1f1;
-    }
-
-    /* Form controls (input, button, ...) trong dark mode */
-    body.dark input,
-    body.dark textarea,
-    body.dark select {
-      background-color: #3b312c;
-      color: #ffffff;
-      border: 1px solid #6c584c;
-    }
-
-    body.dark .form-control::placeholder {
-      color: #c2bcb6;
-    }
-
-    body.dark .btn-primary {
-      background-color: #6c584c;
-      border-color: #6c584c;
-    }
-
-    body.dark .btn-primary:hover {
-      background-color: #5c4b42;
-      border-color: #5c4b42;
-    }
-
-    /* Nút chuyển dark mode */
-    .dark-mode-toggle {
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      color: #6c584c;
-      transition: transform 0.2s ease, color 0.2s ease;
-    }
-
-    .dark-mode-toggle:hover {
-      transform: scale(1.1);
-      color: #c2bcb6;
-    }
-
-    /* Nút trong dark mode */
-    body.dark .dark-mode-toggle {
-      color: #f1f0e5;
-    }
-
-    body.dark .dark-mode-toggle:hover {
-      color: #fff;
-    }
-  </style>
-
   <body>
     <button
       class="dark-mode-toggle"
